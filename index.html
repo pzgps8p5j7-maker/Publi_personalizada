@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Publicidad Personalizada</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+📢 Publicidad Personalizada
+
+</div>
+
+<ul>
+
+<li><a href="#inicio">Inicio</a></li>
+
+<li><a href="#teoria">Teoría</a></li>
+
+<li><a href="#simulador">Simulador</a></li>
+
+<li><a href="#quiz">Quiz</a></li>
+
+</ul>
+
+</nav>
+
+<header id="inicio">
+
+<h1>Aprende sobre la Publicidad Personalizada</h1>
+
+<p>
+
+Descubre cómo empresas como Netflix, Amazon, Spotify y Meta utilizan tus intereses para mostrar anuncios relevantes.
+
+</p>
+
+<a href="#teoria" class="boton">
+
+Comenzar
+
+</a>
+
+</header>
+
+<section id="teoria">
+
+<h2>¿Qué es la Publicidad Personalizada?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📌 Definición</h3>
+
+<p>
+
+Es una estrategia de marketing que adapta anuncios según el comportamiento, gustos e intereses del usuario.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⭐ Beneficios</h3>
+
+<p>
+
+Mejora la experiencia del usuario y aumenta la efectividad de las campañas publicitarias.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚠ Riesgos</h3>
+
+<p>
+
+Puede afectar la privacidad cuando los datos personales son utilizados sin suficiente transparencia.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>💡 Casos Reales</h3>
+
+<p>
+
+Netflix recomienda películas, Spotify música y Amazon productos basándose en tu actividad.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="simulador">
+
+<h2>Simulador de Publicidad</h2>
+
+<p>Selecciona tus intereses.</p>
+
+<div class="checks">
+
+<label><input type="checkbox" value="Viajes"> Viajes ✈️</label>
+
+<label><input type="checkbox" value="Tecnología"> Tecnología 💻</label>
+
+<label><input type="checkbox" value="Moda"> Moda 👗</label>
+
+<label><input type="checkbox" value="Videojuegos"> Videojuegos 🎮</label>
+
+<label><input type="checkbox" value="Comida"> Comida 🍔</label>
+
+<label><input type="checkbox" value="Música"> Música 🎵</label>
+
+</div>
+
+<button onclick="generarPublicidad()">
+
+Generar Publicidad
+
+</button>
+
+<div id="resultado"></div>
+
+</section>
+
+<section id="quiz">
+
+<h2>Juego Interactivo</h2>
+
+<div class="quiz-box">
+
+<div id="progreso">
+
+Pregunta
+
+<span id="contador">
+
+1/15
+
+</span>
+
+</div>
+
+<div class="barra">
+
+<div id="barra"></div>
+
+</div>
+
+<div id="timer">
+
+20
+
+</div>
+
+<h3 id="pregunta"></h3>
+
+<div id="opciones"></div>
+
+<div id="mensaje"></div>
+
+<div id="score">
+
+Puntos:
+
+<span id="puntos">
+
+0
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="final" class="oculto">
+
+<h2>🎉 Juego terminado</h2>
+
+<p id="resultadoFinal"></p>
+
+<button onclick="reiniciarJuego()">
+
+Jugar nuevamente
+
+</button>
+
+</section>
+
+<footer>
+
+Publicidad Personalizada © 2026
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
