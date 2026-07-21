@@ -1,0 +1,307 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#4b0082,#6a0dad,#9b5de5);
+color:white;
+line-height:1.6;
+min-height:100vh;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,.25);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+z-index:1000;
+}
+
+.logo{
+font-size:1.3rem;
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd166;
+}
+
+/* ===== HERO ===== */
+header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+header h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+header p{
+max-width:700px;
+font-size:1.1rem;
+margin-bottom:30px;
+}
+
+.boton{
+background:#ffd166;
+color:#4b0082;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.boton:hover{
+transform:translateY(-3px);
+background:#ffe29a;
+}
+
+/* ===== SECCIONES ===== */
+section{
+padding:90px 40px;
+}
+
+section h2{
+text-align:center;
+font-size:2rem;
+margin-bottom:40px;
+}
+
+/* ===== CARDS ===== */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:25px;
+}
+
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+padding:25px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,.18);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.card h3{
+margin-bottom:12px;
+}
+
+/* ===== SIMULADOR ===== */
+#simulador{
+text-align:center;
+}
+
+.checks{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:15px;
+max-width:900px;
+margin:25px auto;
+}
+
+.checks label{
+background:rgba(255,255,255,.12);
+padding:14px;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+.checks label:hover{
+background:rgba(255,255,255,.2);
+}
+
+button{
+background:#ffd166;
+color:#4b0082;
+border:none;
+padding:14px 26px;
+border-radius:12px;
+font-size:1rem;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+#resultado{
+margin-top:25px;
+font-size:1.1rem;
+font-weight:600;
+}
+
+/* ===== QUIZ ===== */
+.quiz-box{
+max-width:700px;
+margin:0 auto;
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.18);
+}
+
+#progreso{
+display:flex;
+justify-content:space-between;
+margin-bottom:12px;
+font-weight:600;
+}
+
+.barra{
+width:100%;
+height:10px;
+background:rgba(255,255,255,.2);
+border-radius:20px;
+overflow:hidden;
+margin-bottom:20px;
+}
+
+#barra{
+height:100%;
+width:0%;
+background:#ffd166;
+transition:width .4s;
+}
+
+#timer{
+width:70px;
+height:70px;
+margin:0 auto 20px;
+border-radius:50%;
+background:#ffd166;
+color:#4b0082;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:1.4rem;
+font-weight:700;
+}
+
+#pregunta{
+margin-bottom:25px;
+text-align:center;
+}
+
+.opcion{
+background:rgba(255,255,255,.12);
+padding:15px;
+margin:12px 0;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+border:1px solid transparent;
+}
+
+.opcion:hover{
+background:rgba(255,255,255,.22);
+}
+
+.correcta{
+background:#2ecc71 !important;
+border-color:#27ae60;
+}
+
+.incorrecta{
+background:#e74c3c !important;
+border-color:#c0392b;
+}
+
+#mensaje{
+text-align:center;
+margin-top:15px;
+font-weight:700;
+min-height:24px;
+}
+
+#score{
+text-align:center;
+margin-top:20px;
+font-size:1.1rem;
+font-weight:700;
+}
+
+/* ===== FINAL ===== */
+#final{
+text-align:center;
+}
+
+.oculto{
+display:none;
+}
+
+/* ===== FOOTER ===== */
+footer{
+text-align:center;
+padding:30px;
+background:rgba(0,0,0,.2);
+margin-top:40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:10px;
+padding:15px 20px;
+}
+
+nav ul{
+gap:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+header h1{
+font-size:2.1rem;
+}
+
+section{
+padding:80px 20px;
+}
+
+.quiz-box{
+padding:22px;
+}
+
+}
